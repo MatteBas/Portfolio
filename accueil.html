@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo Banroques-Mathian - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     <style>
+       
+
+   
+
+        
+
+       
+
+      
+
+  
+    </style>
+</head>
+<body>
+    <!-- Floating elements -->
+    <div class="floating shell"></div>
+    <div class="floating shell"></div>
+    <div class="floating shell"></div>
+
+    <!-- Waves -->
+    <div class="waves">
+        <div class="wave" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 120&quot; preserveAspectRatio=&quot;none&quot;%3E%3Cpath d=&quot;M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z&quot; fill=&quot;%234A90E2&quot;%3E%3C/path%3E%3C/svg%3E');"></div>
+        <div class="wave" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 120&quot; preserveAspectRatio=&quot;none&quot;%3E%3Cpath d=&quot;M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z&quot; fill=&quot;%235BA3F5&quot;%3E%3C/path%3E%3C/svg%3E');"></div>
+        <div class="wave" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 120&quot; preserveAspectRatio=&quot;none&quot;%3E%3Cpath d=&quot;M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z&quot; fill=&quot;%236CB6FF&quot;%3E%3C/path%3E%3C/svg%3E');"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="projet.html">Projets</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Matteo Banroques-Mathian</h1>
+            <p>Développeur passionné • Étudiant en BUT Informatique</p>
+            <a href="#about" class="cta-button">Découvrir mon parcours</a>
+        </div>
+    </section>
+
+
+            <div class="projects-grid">
+               
+                <div class="project-card-perso" id="about" data-skills="sql" onclick="openModal('a-propos-de-moi')">
+                      
+        <h2 class="section-title">À propos de moi</h2>
+    
+            
+            <div class="about-text">
+                <p>Actuellement étudiant en 2e année de BUT Informatique à l'IUT2 de Grenoble, mon parcours en informatique a commencé très tôt, inspiré par mon intérêt pour les jeux vidéo. En grandissant, ma curiosité m'a poussé à en apprendre davantage, et le développement rapide de l'intelligence artificielle m'a interpellé sur l'avenir de certains métiers.</p>
+                <br>
+                <p>Cette réflexion a renforcé ma détermination à améliorer mes compétences en tant que développeur et à rester à la pointe des technologies émergentes.</p>
+            </div>    
+            </div>
+            </div>
+
+
+                <!-- Modal À propos -->
+    <div id="a-propos-de-moi" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('a-propos-de-moi')">&times;</button>
+            
+            <div class="modal-header">
+                <h2 class="section-title"><strong>Matteo Banroques-Mathian</strong></h2>
+            </div>
+
+            <div class="profile-section">
+                <img src="photoMBMPortfolio.png" alt="Matteo Banroques-Mathian" class="profile-image">
+            </div>
+
+            <div class="timeline-section">
+                <h3 class="timeline-title">Mon Parcours</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2022</div>
+                            <div class="timeline-title-item">Baccalauréat STMG</div>
+                            <div class="timeline-description">
+                                Obtention du baccalauréat Sciences et Technologies du Management et de la Gestion. 
+                                Cette formation m'a donné une première approche du monde de l'entreprise et des systèmes d'information.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2022-2023</div>
+                            <div class="timeline-title-item">1ère année BUT Informatique</div>
+                            <div class="timeline-description">
+                                Découverte des fondamentaux de l'informatique : algorithmique, programmation, bases de données, 
+                                architecture des ordinateurs. Premier contact avec le développement web et les projets collaboratifs.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2023-2024</div>
+                            <div class="timeline-title-item">2ème année BUT Informatique</div>
+                            <div class="timeline-description">
+                                <strong>Parcours : réalisation d'applications :
+conception, développement,
+validation</strong><br>
+                                Approfondissement des compétences en développement avec des frameworks modernes, 
+                                gestion de projets complexes, et spécialisation dans la création d'applications web et mobiles.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card-perso-non-anime">
+            <div class="project-content">
+                <h3 class="project-title">Mes Passions</h3>
+                <div class="project-preview">
+                    <p>Lorsque je suis en dehors de l'IUT, j'aime bien découvrir des nouvelles choses. Récemment, j'ai commencé à faire de <span class="passion-highlight">l'animation sur la suite Adobe</span></p>
+                    <br>
+                    <p>Mais la chose donc je ne pourrai pas me passer, c'est le sport. Que ce soit pour me détendre après une longue journée ou pour maintenir un équilibre entre corps et esprit, l'activité physique fait partie intégrante de ma routine quotidienne.</p>
+                </div>
+                <a href="projet.html " class="cta-button">Découvrir mes projets</a>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+   
+
+    <section id="skills" class="section">
+    <h2 class="section-title">Mes compétences</h2>
+    <p class="skills-subtitle">Cliquez sur une compétence pour voir les projets associés</p>
+    <div class="skills-grid">
+        <div class="skill-card" data-skill="java-javafx">
+            <div class="skill-icon">☕</div>
+            <div class="skill-name">Java & JavaFX</div>
+            <div class="skill-description">Développement d'applications desktop avec interfaces graphiques</div>
+        </div>
+        <div class="skill-card" data-skill="html-css">
+            <div class="skill-icon">🌐</div>
+            <div class="skill-name">HTML/CSS</div>
+            <div class="skill-description">Interfaces web responsives et modernes</div>
+        </div>
+        <div class="skill-card" data-skill="javascript-typescript">
+            <div class="skill-icon">⚡</div>
+            <div class="skill-name">JavaScript/TypeScript</div>
+            <div class="skill-description">Développement web dynamique et applications interactives</div>
+        </div>
+        <div class="skill-card" data-skill="php-symfony">
+            <div class="skill-icon">🐘</div>
+            <div class="skill-name">PHP</div>
+            <div class="skill-description">Développement web backend robuste</div>
+        </div>
+        <div class="skill-card" data-skill="databases">
+            <div class="skill-icon">🗄️</div>
+            <div class="skill-name">Bases de données</div>
+            <div class="skill-description">SQL, PostgreSQL, MySQL </div>
+         
+        </div>
+        <div class="skill-card" data-skill="c-cpp">
+            <div class="skill-icon">🔧</div>
+            <div class="skill-name">C/C++</div>
+            <div class="skill-description">Programmation système et algorithmes optimisés</div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Mes projets principaux</h2>
+        <div class="projects-grid">
+            <a href="projet.html" class="project-card">
+                <div class="project-image">🎿</div>
+                <div class="project-content">
+                    <h3 class="project-title">MontSki</h3>
+                    <p class="project-description">Application Java/JavaFX de gestion de sorties pour clubs de ski. Projet complet incluant analyse des besoins, conception UML, maquettes et développement.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Intellij IDEA</span>
+                        <span class="tech-tag">JavaFX</span>
+                    </div>
+                </div>
+            </a>
+            <a href="projet.html" class="project-card">
+            <div class="project-image">🌉</div>
+            <div class="project-content">
+            <h3 class="project-title">Marapont</h3>
+            <p class="project-description">
+            Application web TypeScript/AstroJS pour la valorisation du patrimoine français (ponts) avec système de réservation de packages culturels et sportifs.
+            </p>
+            <div class="project-tech">
+            <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Visual Studio Code</span>
+                        <span class="tech-tag">VueJS</span>
+                        <span class="tech-tag">AstroJS</span>
+                        <span class="tech-tag">NodeJS</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Drizzle ORM</span>
+                        <span class="tech-tag">Docker</span>
+            </div>
+            </div>
+            </a>
+
+            <a href="projet.html" class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-content">
+                    <h3 class="project-title">Analyse OpenFoodFacts</h3>
+                    <p class="project-description">Traitement de la base de données OpenFoodFacts pour analyser le nutri-score des glaces aux États-Unis via requêtes SQL et visualisations graphiques.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">R Studio</span>
+                        <span class="tech-tag">R Markdown</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+  
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-text">matteo.banroques--mathian@etu.univ-grenoble-alpes.fr</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-text">+33 7 71 68 55 30</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div class="contact-text">
+                        <a href="https://www.linkedin.com/in/matteo-banroques-mathian-0a7ba1329" target="_blank" style="color: #2c5aa0; text-decoration: none;">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🐙</div>
+                    <div class="contact-text">
+                        <a href="https://github.com/MatteBas" target="_blank" style="color: #2c5aa0; text-decoration: none;">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <script src="script.js"></script>
+</body>
+</html>

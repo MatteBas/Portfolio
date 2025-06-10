@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matteo Banroques-Mathian - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <!-- Floating elements -->
+    <div class="floating shell"></div>
+    <div class="floating shell"></div>
+    <div class="floating shell"></div>
+
+    <!-- Waves -->
+    <div class="waves">
+        <div class="wave" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 120&quot; preserveAspectRatio=&quot;none&quot;%3E%3Cpath d=&quot;M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z&quot; fill=&quot;%234A90E2&quot;%3E%3C/path%3E%3C/svg%3E');"></div>
+        <div class="wave" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 120&quot; preserveAspectRatio=&quot;none&quot;%3E%3Cpath d=&quot;M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z&quot; fill=&quot;%235BA3F5&quot;%3E%3C/path%3E%3C/svg%3E');"></div>
+        <div class="wave" style="background-image: url('data:image/svg+xml,%3Csvg xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1200 120&quot; preserveAspectRatio=&quot;none&quot;%3E%3Cpath d=&quot;M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z&quot; fill=&quot;%236CB6FF&quot;%3E%3C/path%3E%3C/svg%3E');"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="accueil.html">Accueil</a></li>
+            <li><a href="projet.html">Projets</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <div class="projets">
+            <h1>Développement d'application</h1>
+            <div class="projects-grid">
+
+        <!-- Projet Carnet de Suivi -->
+        <div class="project-card" data-skills="java,php" onclick="openModal('modal-carnet-suivi')">
+            <div class="project-content">
+                <div class="project-date">Mars 2025</div>
+                <h3 class="project-title">Mon Carnet de Suivi de Recherche de Stage</h3>
+                <div class="project-preview">
+                    Système complet de suivi des recherches de stage avec application mobile Android pour étudiants et interface web back-office pour responsables. Architecture 4-tiers avec API REST sécurisée.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Android</span>
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">Symfony</span>
+                    <span class="tech-tag">API Rest</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Espresso</span>
+                    <span class="tech-tag">Cypress</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Gitlab</span>
+                </div>
+                </div> 
+            </div>
+
+                <!-- Projet Application Mobile Éducative -->
+        <div class="project-card" data-skills="java,mysql" onclick="openModal('modal-app-educative')">
+            <div class="project-content">
+                <div class="project-date">Fevrier 2025</div>
+                <h3 class="project-title">Appli Éducative Enfants</h3>
+                <div class="project-preview">
+                    Application mobile Android destinée aux enfants du primaire avec des exercices ludiques en mathématiques, français et géographie.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Android Studio</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">GitLab</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projet Site E-commerce -->
+        <div class="project-card" data-skills="php,mysql" onclick="openModal('modal-ecommerce')">
+            <div class="project-content">
+                <div class="project-date">Fevrier 2025</div>
+                <h3 class="project-title">Site E-commerce</h3>
+                <div class="project-preview">
+                    Application web de e-commerce simulant un supermarché, permettant l'achat de produits alimentaires et objets du quotidien. 
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">PHP</span>
+                    <span class="tech-tag">PHPstorm</span>
+                    <span class="tech-tag">Symfony</span>
+                    <span class="tech-tag">Doctrine ORM</span>
+                    <span class="tech-tag">Twig</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Gitlab</span>
+                </div>
+            </div>
+        </div>
+        <!-- Projet API Genius -->
+        <div class="project-card" data-skills="javascript" onclick="openModal('modal-api-genius')">
+            <div class="project-content">
+                <div class="project-date">Janvier 2025</div>
+                <h3 class="project-title">Spotzer</h3>
+                <div class="project-preview">
+                    Application web sur la musique avec l'implémentation d'une API publique, ici Genius qui permet de consulté des musiques et leurs paroles.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Javascript</span>
+                    <span class="tech-tag">Visual Studio Code</span>
+                    <span class="tech-tag">API Rest</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Gitlab</span>
+                </div>
+                </div> 
+            </div>
+      
+                <!-- Projet Marapont -->
+                <div class="project-card" data-skills="typescript,sql,html,css" onclick="openModal('modal-marapont')">
+                      <div class="project-content">
+                    <div class="project-date">Novembre 2024</div>
+                    <h3 class="project-title">Marapont</h3>
+                    <div class="project-preview">
+                        Projet académique de développement d'une application valorisant le patrimoine physique et culturel français, avec système de réservation d'activités.
+                    </div>
+                  
+                    <div class="project-tech">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Visual Studio Code</span>
+                        <span class="tech-tag">VueJS</span>
+                        <span class="tech-tag">AstroJS</span>
+                        <span class="tech-tag">NodeJS</span>
+                        <span class="tech-tag">Tailwind</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Drizzle ORM</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Git</span>
+                        <span class="tech-tag">Gitlab</span>
+                    </div>
+                      </div>
+                </div>
+
+                <!-- Projet Capgemini -->
+                <div class="project-card" data-skills="html,css" onclick="openModal('modal-capgemini')">
+                          <div class="project-content">
+                    <div class="project-date">Décembre 2023</div>
+                    <h3 class="project-title">Refonte du site de Capgemini</h3>
+                    <div class="project-preview">
+                        Adaptation du site Capgemini pour un public collégien, incluant conception de wireframes, maquettes et développement.
+                    </div>
+                         
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">Whimsical</span>
+                        <span class="tech-tag">Gitlab</span>
+                    </div>
+                     </div>
+                </div>
+
+                <!-- Projet Tri de dépêches -->
+                <div class="project-card" data-skills="java" onclick="openModal('modal-depeche')">
+                     <div class="project-content">
+                    <div class="project-date">Novembre 2023</div>
+                    <h3 class="project-title">Tri et classification automatique de dépêche</h3>
+                    <div class="project-preview">
+                        Programme d'analyse et classification automatique de dépêches dans des catégories spécifiques avec optimisation des performances.
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">IntelliJ IDEA</span>
+                        <span class="tech-tag">Gitlab</span>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Projet MontSki -->
+                <div class="project-card" data-skills="java,javafx" onclick="openModal('modal-montski')">
+                    <div class="project-content">
+                    <div class="project-date">Juin 2023</div>
+                    <h3 class="project-title">MontSki</h3>
+                    <div class="project-preview">
+                        Application de gestion de sorties pour clubs de ski, développée avec JavaFX incluant toutes les phases du cycle de développement.
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Intellij IDEA</span>
+                        <span class="tech-tag">JavaFX</span>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Projet Jeu de guerre -->
+                <div class="project-card" data-skills="java" onclick="openModal('modal-jeu-guerre')">
+                    <div class="project-content">
+                    <div class="project-date">Mars 2024</div>
+                    <h3 class="project-title">Jeu de guerre</h3>
+                    <div class="project-preview">
+                        Jeu de guerre entre différents types de guerriers (elfes, nains) avec focus sur la qualité de code et les tests unitaires.
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">CLION</span>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Projet Générateur de mot de passe -->
+                <div class="project-card" data-skills="c,cpp" onclick="openModal('modal-password-generator')">
+                    <div class="project-content">
+                    <div class="project-date">Janvier 2025</div>
+                    <h3 class="project-title">Générateur de mot de passe / Vérificateur de sécurité</h3>
+                    <div class="project-preview">
+                        Programme de génération de mots de passe sécurisés et vérification selon les consignes CNIL, développé en C puis adapté en C++.
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Visual Studio Code</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <h1>Projet de base de données</h1>
+            <div class="projects-grid">
+                <!-- Projet OpenFoodFacts -->
+                <div class="project-card" data-skills="sql" onclick="openModal('modal-openfoodfacts')">
+                     <div class="project-content">
+                    <div class="project-date">Février 2024</div>
+                    <h3 class="project-title">Tri et Analyse de la BD OpenFoodFacts</h3>
+                    <div class="project-preview">
+                        Exploration de la base de données OpenFoodFacts pour analyser le Nutri-Score des glaces aux États-Unis avec visualisations graphiques.
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">R Studio</span>
+                        <span class="tech-tag">R Markdown</span>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Projet Titanic -->
+                <div class="project-card" data-skills="sql" onclick="openModal('modal-titanic')">
+                     <div class="project-content">
+                    <div class="project-date">Novembre 2023</div>
+                    <h3 class="project-title">Création et analyse d'une BD</h3>
+                    <div class="project-preview">
+                        Création d'une base de données sur le crash du Titanic avec analyse des facteurs influençant la survie des passagers.
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </main>
+
+    <!-- Modals -->
+    <!-- Modal Marapont -->
+    <div id="modal-marapont" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-marapont')">&times;</button>
+            <div class="modal-header">
+                <h2 class="modal-title">Marapont</h2>
+                <div class="modal-date">Projet scolaire</div>
+            </div>
+            
+            <div class="slider">
+                <div class="slides">
+                    <img class="slide" src="screenshot-projets/Marapont/Marapont.png" alt="Marapont 1">
+                    <img class="slide" src="screenshot-projets/Marapont/Architecture.png" alt="Architecture">
+                    <img class="slide" src="screenshot-projets/Marapont/Techno.drawio.png" alt="Technologies">
+                    <img class="slide" src="screenshot-projets/Marapont/DiagDeClasseMarapont.png" alt="Diagramme de classe">
+                    <img class="slide" src="screenshot-projets/Marapont/Marapont_UC1.png" alt="Use Case 1">
+                    <img class="slide" src="screenshot-projets/Marapont/Marapont_UC2.png" alt="Use Case 2">
+                    <img class="slide" src="screenshot-projets/Marapont/Marapont_UC3.png" alt="Use Case 3">
+                    <img class="slide" src="screenshot-projets/Marapont/diagrammedeSequence-Demander-à-ajouter-ses-activités-à-un-package-prédéfini.png" alt="Diagramme de séquence">
+                    <img class="slide" src="screenshot-projets/Marapont/BPMN1.png" alt="BPMN 1">
+                    <img class="slide" src="screenshot-projets/Marapont/BPMN2.png" alt="BPMN 2">
+                </div>
+                <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+                <button class="next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
+            
+            <div class="modal-description">
+                <strong>Description :</strong> Projet académique de 3 mois réalisé en équipe de 7 personnes, ayant pour objectif de développer une application valorisant le patrimoine physique et culturel français. Le projet met en avant les ponts de France et propose un système de réservation d'activités physiques ou culturelles situées à proximité.
+                <br><br>
+                La première phase a été consacrée à l'analyse. Cette étape a permis de choisir un sujet pertinent en lien avec la consigne, d'analyser l'environnement du projet, d'étudier les risques et contraintes, d'identifier les besoins fonctionnels et non fonctionnels, ainsi que de définir les outils et technologies à utiliser.
+                <br><br>
+                Lors de la phase de conception, nous avons modélisé les idées de la première phase en plusieurs diagrammes UML. Nous avons également conçu les maquettes et personas.
+                <br><br>
+                Durant la phase de developpement, j'ai participé au developpement des DAO, notamment pour les activités et les groupes d'activités. Côté front-end j'ai fait la page d'accueil et le responsive du site en entier.
+                <br><br>
+                <strong>Rôles :</strong> Pendant la phase de cadrage j'ai clarifié l'offre de notre application, identifié les besoins fonctionnels, et également analysé notre environnement en faisant une analyse SWOT et PESTEL. Pendant la phase de conception j'ai réalisé le diagramme des use case, de séquence, participé à la conception du modèle de l'application, puis enfin un BPMN de notre processus métier principal.
+            </div>
+            
+            <div class="modal-tech">
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Astro JS</span>
+                <span class="tech-tag">Bun</span>
+                <span class="tech-tag">Capacitor</span>
+                <span class="tech-tag">Vitest</span>
+                <span class="tech-tag">Playwright</span>
+                <span class="tech-tag">Docker</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Capgemini -->
+    <div id="modal-capgemini" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-capgemini')">&times;</button>
+            <div class="modal-header">
+                <h2 class="modal-title">Refonte du site de Capgemini</h2>
+                <div class="modal-date">Projet scolaire</div>
+            </div>
+            
+            <div class="slider">
+                <div class="slides">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/CapgeminiAccueil.png" alt="Capgemini Accueil">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageAccueil1.png" alt="Page Accueil 1">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageAccueil2.png" alt="Page Accueil 2">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageAccueil3.png" alt="Page Accueil 3">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageAPropos1.png" alt="Page À Propos 1">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageAPropos2.png" alt="Page À Propos 2">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageAPropos3.png" alt="Page À Propos 3">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageValeurs1.png" alt="Page Valeurs 1">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageValeurs2.png" alt="Page Valeurs 2">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageValeurs3.png" alt="Page Valeurs 3">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageValeurs4.png" alt="Page Valeurs 4">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageContact1.png" alt="Page Contact 1">
+                    <img class="slide" src="screenshot-projets/Refonte Capgemini/PageContact2.png" alt="Page Contact 2">
+                </div>
+                <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+                <button class="next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
+            
+            <div class="modal-description">
+                <strong>Description :</strong> Projet en équipe de 4 sur 3 semaines réparties sur plusieurs mois. L'objectif était d'adapter le site Capgemini pour un public collégien. Nous avons conçu un cahier des charges pendant la première semaine avant de concevoir les wireframes et maquettes, pour enfin développer le site et ses pages en HTML/CSS sur la dernière semaine.
+                <br><br>
+                <strong>Rôles :</strong> J'ai travaillé sur la page "À propos", depuis sa conception (wireframe et mockup) jusqu'à son développement. J'ai également revu et amélioré le texte pour le rendre plus accessible et compréhensible par des collégiens.
+            </div>
+            
+            <div class="modal-tech">
+                <span class="tech-tag">HTML/CSS</span>
+                <span class="tech-tag">Visual Studio Code</span>
+                <span class="tech-tag">Whimsical</span>
+                <span class="tech-tag">GitHub</span>
+                <span class="tech-tag">Discord</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Continuez pour les autres modals... -->
+
+<div id="modal-montski" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-montski')">&times;</button>
+        <div class="modal-header">
+            <h2 class="modal-title">MontSki</h2>
+            <div class="modal-date">Projet scolaire</div>
+        </div>
+        
+        <div class="slider">
+            <div class="slides">
+                <img class="slide" src="screenshot-projets/MontSki/MONT-SKi-accueil.png" alt="Accueil MontSki">
+                <img class="slide" src="screenshot-projets/MontSki/DiagrammeDeClasseMetier1.png" alt="Diagramme de classe métier 1">
+                <img class="slide" src="screenshot-projets/MontSki/DiagrammeDeClasseMetier2.png" alt="Diagramme de classe métier 2">
+                <img class="slide" src="screenshot-projets/MontSki/DiagrammeObjet1.png" alt="Diagramme objet 1">
+                <img class="slide" src="screenshot-projets/MontSki/DiagrammeObjet2.png" alt="Diagramme objet 2">
+                <img class="slide" src="screenshot-projets/MontSki/DiagDeSequence-InscrireUnMoniteur.png" alt="Diagramme de séquence - Inscrire un moniteur">
+                <img class="slide" src="screenshot-projets/MontSki/DiagDeSequence-InscrireUnParticipant.png" alt="Diagramme de séquence - Inscrire un participant">
+                <img class="slide" src="screenshot-projets/MontSki/MaqueteMoniteur.png" alt="Maquette moniteur">
+                <img class="slide" src="screenshot-projets/MontSki/MaquetteGroupeMegaSAE.png" alt="Maquette groupe">
+                <img class="slide" src="screenshot-projets/MontSki/MaquetteMaterielMegaSAE.png" alt="Maquette matériel">
+                <img class="slide" src="screenshot-projets/MontSki/MaquetteParticipantMegaSae1.png" alt="Maquette participant 1">
+                <img class="slide" src="screenshot-projets/MontSki/MaquetteParticipantMegaSae2.png" alt="Maquette participant 2">
+                <img class="slide" src="screenshot-projets/MontSki/MaquetteTransportMegaSAE.png" alt="Maquette transport">
+            </div>
+            <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+            <button class="next" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+        
+        <div class="modal-description">
+            <strong>Description :</strong> Dans ce projet réalisé en équipe de six, nous avons conçu une application de gestion de sorties pour les clubs de ski. Le travail a inclus toutes les étapes du cycle de vie d'un projet : analyse des besoins, conception (diagrammes UML, personas, maquettes) et développement en Java avec JavaFX. Afin de trouver le but de notre application, nous avons dû pitcher notre idée d'application, une présentation avec notre lean canvas ainsi qu'une soutenance finale avec une démonstration et la présentation de notre travail.
+            <br><br>
+            <strong>Rôles :</strong> J'ai travaillé en back end sur le développement des classes personnes et organisateurs et en front end j'ai fait la page d'accueil. Pendant la phase conception je me suis occupé du diagramme de cas d'utilisation et des diagrammes de séquences pour tester la validité de nos diagrammes. J'ai à côté travaillé sur le pitch et au même moment contribué au lean canvas pour ensuite présenter le projet aux clients.
+        </div>
+        
+        <div class="modal-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">JavaFX</span>
+            <span class="tech-tag">IntelliJ IDEA</span>
+            <span class="tech-tag">Draw.io</span>
+            <span class="tech-tag">Whimsical</span>
+            <span class="tech-tag">Canva</span>
+            <span class="tech-tag">GitHub</span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Jeu de guerre -->
+<div id="modal-jeu-guerre" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-jeu-guerre')">&times;</button>
+        <div class="modal-header">
+            <h2 class="modal-title">Jeu de guerre</h2>
+            <div class="modal-date">Projet scolaire</div>
+        </div>
+        
+        <div class="slider">
+            <div class="slides">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/accueil.png" alt="Accueil">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/guerrier1.png" alt="Guerrier 1">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/guerrier2.png" alt="Guerrier 2">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/guerrier3.png" alt="Guerrier 3">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/guerrier4.png" alt="Guerrier 4">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/guerrier5.png" alt="Guerrier 5">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/guerrier6.png" alt="Guerrier 6">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/guerrier7.png" alt="Guerrier 7">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/elfe1.png" alt="Elfe 1">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/elfe2.png" alt="Elfe 2">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/nain1.png" alt="Nain 1">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/nain2.png" alt="Nain 2">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/chateau1.png" alt="Château 1">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/chateau2.png" alt="Château 2">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/chateau3.png" alt="Château 3">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/chateau4.png" alt="Château 4">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/chateau5.png" alt="Château 5">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/chateau6.png" alt="Château 6">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/testGuerrier1.png" alt="Test guerrier 1">
+                <img class="slide" src="screenshot-projets/JeuDeGuerre/testGuerrier2.png" alt="Test guerrier 2">
+            </div>
+            <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+            <button class="next" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+        
+        <div class="modal-description">
+            <strong>Description :</strong> Projet personnel sur la création d'un jeu de guerre entre guerriers, il existe plusieurs types de guerriers des elfes, nains et autres qui se battent pour leur château. Les différents camps sont différenciés sur leur couleur. Les guerriers se battent ainsi entre eux pour conquérir le château adverse. Ce projet réalisé en Java était axé sur la qualité de code.
+            <br><br>
+            <strong>Rôles :</strong> J'ai travaillé en back end sur le développement des classes château, guerrier, elfe, nain. J'ai fait de la JavaDoc et des tests unitaires pour la qualité de code.
+        </div>
+        
+        <div class="modal-tech">
+            <span class="tech-tag">Java</span>
+            <span class="tech-tag">IntelliJ IDEA</span>
+            <span class="tech-tag">JUnit</span>
+            <span class="tech-tag">GitLab</span>
+            <span class="tech-tag">Git</span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Générateur de mot de passe -->
+<div id="modal-password-generator" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-password-generator')">&times;</button>
+        <div class="modal-header">
+            <h2 class="modal-title">Générateur de mot de passe / Vérificateur de sécurité</h2>
+            <div class="modal-date">Projet scolaire</div>
+        </div>
+        
+        <div class="slider">
+            <div class="slides">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/accueil.png" alt="Accueil">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/TraceExe.png" alt="Trace exécution">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/melangerMot.png" alt="Mélanger mot">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/genererMdpSec1.png" alt="Générer mot de passe sécurisé 1">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/genererMdpSec2.png" alt="Générer mot de passe sécurisé 2">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/verifSecMdp1.png" alt="Vérifier sécurité mot de passe 1">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/verifSecMdp2.png" alt="Vérifier sécurité mot de passe 2">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/main1.png" alt="Main 1">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/main2.png" alt="Main 2">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/c++MelChaine.png" alt="C++ Mélanger chaîne">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/c++GenPasswrd.png" alt="C++ Générer mot de passe">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/c++CheckPasswrd1.png" alt="C++ Vérifier mot de passe 1">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/c++CheckPasswrd2.png" alt="C++ Vérifier mot de passe 2">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/c++Main1.png" alt="C++ Main 1">
+                <img class="slide" src="screenshot-projets/CréerUnMdp/c++Main2.png" alt="C++ Main 2">
+            </div>
+            <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+            <button class="next" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+        
+        <div class="modal-description">
+            <strong>Description :</strong> Projet personnel concernant la création d'un programme pour générer un mot de passe ainsi que de vérifier sa sécurité par rapport aux consignes de la CNIL. Une fois codé en C j'ai adapté le code en C++.
+            <br><br>
+            <strong>Rôles :</strong> J'ai dû imaginer comment réaliser ces idées en C avec les méthodes du langage pour faire ce programme et les différentes méthodes pour mélanger les caractères d'une chaîne, générer un mot de passe sécurisé, ainsi que vérifier sa sécurité.
+        </div>
+        
+        <div class="modal-tech">
+            <span class="tech-tag">C</span>
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">Visual Studio Code</span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal OpenFoodFacts -->
+<div id="modal-openfoodfacts" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-openfoodfacts')">&times;</button>
+        <div class="modal-header">
+            <h2 class="modal-title">Tri et Analyse de la BD OpenFoodFacts</h2>
+            <div class="modal-date">Projet scolaire</div>
+        </div>
+        
+        <div class="slider">
+            <div class="slides">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/PremiereImageSaeSQLS3.png" alt="Première image">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/CodeSQL1.png" alt="Code SQL 1">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/CodeSQL2.png" alt="Code SQL 2">    
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/CodeSQL3.png" alt="Code SQL 3">    
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RscreenSAESQL1.png" alt="R screen 1">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RGraphScreenSAESQL1.png" alt="R graphique 1">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RscreenSAESQL2.png" alt="R screen 2">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RGraphScreenSAESQL2.png" alt="R graphique 2">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RscreenSAESQL3.png" alt="R screen 3">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RGraphScreenSAESQL3.png" alt="R graphique 3">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RscreenSAESQL4.png" alt="R screen 4"> 
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RGraphScreenSAESQL4.png" alt="R graphique 4">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RscreenSAESQL5.png" alt="R screen 5">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RGraphScreenSAESQL5.png" alt="R graphique 5">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RscreenSAESQL6.png" alt="R screen 6">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RGraphScreenSAESQL6.png" alt="R graphique 6">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RscreenSAESQL7.png" alt="R screen 7">
+                <img class="slide" src="screenshot-projets/SQL- OpenFoodFact/RGraphScreenSAESQL7.png" alt="R graphique 7">
+            </div>
+            <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+            <button class="next" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+        
+        <div class="modal-description">
+            <strong>Description :</strong> Dans ce projet SQL en binôme, nous avons exploré la base de données OpenFoodFacts pour analyser le Nutri-Score des glaces aux États-Unis. L'objectif était d'identifier les éléments influençant ce score à travers des requêtes et faire une analyse en produisant des graphiques. Notre base de données brute n'étant pas utilisable dans son état initial il a fallu faire différentes manipulations pour s'en servir.
+            <br><br>
+            <strong>Rôles :</strong> J'ai étudié la structure de la BD pour identifier les éléments sur lesquels on allait faire le tri. Puis j'ai créé une nouvelle BD à partir de l'ancienne en supprimant les doublons et les valeurs aberrantes. Pour l'analyse je m'occupais de trouver des éléments intéressants à analyser et j'ai produit la moitié des graphiques en R.
+        </div>
+        
+        <div class="modal-tech">
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">R Studio</span>
+            <span class="tech-tag">R Markdown</span>
+            <span class="tech-tag">Discord</span>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Titanic -->
+<div id="modal-titanic" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeModal('modal-titanic')">&times;</button>
+        <div class="modal-header">
+            <h2 class="modal-title">Création et analyse d'une BD</h2>
+            <div class="modal-date">Projet scolaire</div>
+        </div>
+        
+        <div class="slider">
+            <div class="slides">
+                <img class="slide" src="screenshot-projets/SQL - Titanic/SaeTitanicAccueil.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/SQL - Titanic/SEA.png" alt="SEA">
+                <img class="slide" src="screenshot-projets/SQL - Titanic/SLR1.png" alt="SLR 1">    
+                <img class="slide" src="screenshot-projets/SQL - Titanic/SLR2.png" alt="SLR 2">    
+                <img class="slide" src="screenshot-projets/SQL - Titanic/SLR3.png" alt="SLR 3">    
+                <img class="slide" src="screenshot-projets/SQL - Titanic/SLR4.png" alt="SLR 4">    
+                <img class="slide" src="screenshot-projets/SQL - Titanic/SLR5.png" alt="SLR 5">
+                <img class="slide" src="screenshot-projets/SQL - Titanic/RequeteSQL1.png" alt="Requête SQL 1">    
+                <img class="slide" src="screenshot-projets/SQL - Titanic/RequeteSQL2.png" alt="Requête SQL 2">    
+                <img class="slide" src="screenshot-projets/SQL - Titanic/RequeteSQL3.png" alt="Requête SQL 3">   
+                <img class="slide" src="screenshot-projets/SQL - Titanic/RequeteSQL4.png" alt="Requête SQL 4">    
+                <img class="slide" src="screenshot-projets/SQL - Titanic/RequeteSQL5.png" alt="Requête SQL 5">    
+                <img class="slide" src="screenshot-projets/SQL - Titanic/RequeteSQL6.png" alt="Requête SQL 6">    
+                <img class="slide" src="screenshot-projets/SQL - Titanic/RequeteSQL7.png" alt="Requête SQL 7">
+                <img class="slide" src="screenshot-projets/SQL - Titanic/RequeteSQL8.png" alt="Requête SQL 8">                 
+            </div>
+            <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+            <button class="next" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+        
+        <div class="modal-description">
+            <strong>Description :</strong> Projet académique en binôme sur la création d'une base de données basée sur le crash du Titanic. La première phase consistait à réaliser le Schéma Entité-Association (SEA) et le Schéma Logique Relationnel (SLR). La deuxième phase a impliqué l'interrogation de la base de données pour répondre à la question : "Quels étaient les facteurs influençant la survie des passagers ?" Le travail a été réparti entre les deux membres du binôme pour les requêtes. Enfin, un document de conclusion avec les requêtes a été remis.
+            <br><br>
+            <strong>Rôles :</strong> Pendant la première phase j'ai été en charge de transformer le SEA en SLR, puis pendant la seconde phase il y avait un certain nombre de requêtes à faire nous nous sommes répartis équitablement les requêtes.
+        </div>
+        
+        <div class="modal-tech">
+            <span class="tech-tag">SQL</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Discord</span>
+            <span class="tech-tag">Google docs</span>
+        </div>
+    </div>
+</div>
+
+<div id="modal-app-educative" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-app-educative')">&times;</button>
+            <div class="modal-header">
+                <h2 class="modal-title">Appli Éducative Enfants</h2>
+                <div class="modal-date">Projet scolaire</div>
+            </div>
+
+            <div class="slider">
+            <div class="slides">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/rendu visuel 1.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/rendu visuel 2.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/rendu visuel 3.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/rendu visuel 4.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/Strucutre du projet.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/Interaction bd - entité utilisateur.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/Interaction bd - utilisateur DAO.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/Modele multiplication 1.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/Modele multiplication 2.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/Addition activity 1.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/Addition activity 2.png" alt="">
+                <img class="slide" src="screenshot-projets/Ecole des loustiques/Addition activity 3.png" alt="">
+                
+
+                        
+            </div>
+            <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+            <button class="next" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+            
+            <div class="modal-description">
+                <strong>Description :</strong> Ce projet consiste en le développement d'une application mobile Android destinée aux enfants du primaire. L'application propose des exercices ludiques en mathématiques, en français et en géographie pour leur permettre de s'entraîner et d'apprendre de manière autonome.
+                <br><br>
+               L'objectif était d'apprendre à concevoir une application mobile Android complète en Java, en suivant un cahier des charges précis, tout en proposant un outil éducatif simple et interactif pour accompagner les enfants dans leurs apprentissages fondamentaux.
+                <br><br>
+                
+                <strong>Rôle :</strong> Gestion des utilisateurs (création de comptes, connexion, suivi des scores), développement de la logique métier en programmation orientée objet, implémentation des interfaces ergonomiques et mise en place des contrôleurs.
+            </div>
+            
+           
+        </div>
+    </div>
+
+    <!-- Modal Site E-commerce -->
+    <div id="modal-ecommerce" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-ecommerce')">&times;</button>
+            <div class="modal-header">
+                <h2 class="modal-title">Site de E-commerce</h2>
+                <div class="modal-date">Projet scolaire</div>
+            </div>
+            
+        <div class="slider">
+            <div class="slides">
+                <img class="slide" src="screenshot-projets/Site e-commerce/Structure projet - 1.png" alt="">
+                <img class="slide" src="screenshot-projets/Site e-commerce/Structure projet - 2.png" alt="">
+                <img class="slide" src="screenshot-projets/Site e-commerce/Structure projet - 3.png" alt="">
+                <img class="slide" src="screenshot-projets/Site e-commerce/Entite produit.png" alt="">
+                <img class="slide" src="screenshot-projets/Site e-commerce/Repository entité (produit).png" alt="">
+                <img class="slide" src="screenshot-projets/Site e-commerce/Controlleur Panier.png" alt="">
+                <img class="slide" src="screenshot-projets/Site e-commerce/Vue BOutique.png" alt="">
+            
+            </div>
+            <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+            <button class="next" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+
+            <div class="modal-description">
+                <strong>Description :</strong> Application web de e-commerce permettant aux utilisateurs d'acheter des produits alimentaires ainsi que divers objets du quotidien. Le projet simule le site d'un supermarché et a été conçu pour maîtriser les fondamentaux du framework Symfony.
+                <br><br>
+                Ce projet était à but éducatif, notamment pour maîtriser les fondamentaux du framework Symfony (routing, contrôleurs, entités, formulaires), comprendre la structuration d'une application web e-commerce et mettre en œuvre une architecture MVC complète.
+                <br><br>
+        il a pour fontionnalité, l'Affichage des produits, gestion du panier, création de comptes utilisateurs, passage de commande, avec une interface dynamique créée avec Twig.
+                <br><br>
+              et suit une architecture MVC: avec pour modele modèle les entités Produit, Utilisateur, Commande, Catégorie, puis comme vu les pages web créées avec Twig. Enfin les classes Symfony pour gérer la navigation et les actions soient les controleurs.
+                <br><br>
+                <strong>Rôles :</strong> Développement des fonctionnalités principales, intégration du front-end avec Twig, mise en place de la base de données MySQL avec Doctrine ORM, et structuration du projet en MVC.
+            </div>
+            
+            <div class="modal-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">Symfony</span>
+                <span class="tech-tag">Twig</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Doctrine ORM</span>
+                <span class="tech-tag">Composer</span>
+                <span class="tech-tag">phpMyAdmin</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Carnet de Suivi -->
+    <div id="modal-carnet-suivi" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-carnet-suivi')">&times;</button>
+            <div class="modal-header">
+                <h2 class="modal-title">Mon Carnet de Suivi de Recherche de Stage</h2>
+                <div class="modal-date">Projet scolaire</div>
+            </div>
+            
+    <div class="slider">
+            <div class="slides">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/nouvelle interface 1.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/nouvelle interface 2.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/nouvelle interface 3.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Ancienne interface 1.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Ancienne interface 2.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Structure projet 1.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Structure projet 2.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/API SERVICE.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/API CLIENT.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Entité Offre.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Offre Activity 1.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Offre Activity 2.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Offre Activity 3.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Offre Activity 4.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Offre Activity 5.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Vue 1.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Vue 2.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/Vue 3.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/BD 0FN.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/Carnet de suivi de stage/BD 3FN.png" alt="Accueil Titanic">
+            </div>
+            <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+            <button class="next" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+
+            <div class="modal-description">
+                <strong>Description :</strong> Application complète dédiée au suivi des recherches de stage pour les étudiants IUT. Le système propose une application mobile Android pour les étudiants, une interface web back-office pour les responsables de stage, et centralise la gestion des offres et candidatures via une API sécurisée.
+                <br><br>
+                <strong>Problème résolu :</strong> Faciliter et centraliser le processus de recherche de stage en éliminant la dispersion des offres, en simplifiant le suivi des candidatures et en offrant une visibilité claire aux responsables pédagogiques.
+                <br><br>
+                Côté architecture du projet, c'est une architecture 4-tiers (Application Mobile + Interface Web + API REST + Base de données) avec pattern MVC respecté sur tous les composants. Modèle de données reconçu vers la 3ème forme normale (3FN) avec 7 entités principales.
+                <br><br>
+                La qualité étant au centre de nos préoccupation, mise en place de tests automatisés (Cypress + Espresso), couverture de code >80%, documentation complète (JavaDoc + API Platform), et validation par tests utilisateurs.
+                <br><br>
+                <strong>Rôles :</strong>J'ai participé à la refonte complète de l'application mobile Android dont l'optimisation UX/UI et du cycle de vie des activités. De ce qui est du back-end j'ai fait la mise en conformité avec les améliorations serveur pour les routes API. Lorsqu'ils en manquaient coté android je m'occupé de les codés. Restructuration des classes Activity, et developpement de certaines comme pour les offres d'entreprise dnas la page d'acceuil. Enfin, j'ai fais l'implémentation des tests Espresso
+                <br><br>
+              
+            </div>
+            
+            <div class="modal-tech">
+                <span class="tech-tag">Android</span>
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Symfony</span>
+                <span class="tech-tag">API Platform</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Espresso</span>
+                <span class="tech-tag">Cypress</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal Dépêche -->
+    <div id="modal-depeche" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-depeche')">&times;</button>
+            <div class="modal-header">
+                <h2 class="modal-title">Tri et classification automatique de dépêche</h2>
+                <div class="modal-date">Novembre 2023</div>
+            </div>
+            
+            <div class="slider">
+                <div class="slides">
+                     <img class="slide" src="screenshot-projets/JAVA - Depeche/SaeDepecheAccueil.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/PourcentagePrecision.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/DicoEco.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/DicoCulture.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/DicoEnvScience.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/DicoPolitique.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/DicoSport.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Depeche1.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Depeche2.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Depeche3.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Depeche4.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Categorie1.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Categorie2.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Categorie3.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Classification1.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Classification2.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Classification3.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Classification4.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Classification5.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Classification6.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Classification7.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Classification8.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Classification9.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Utilitaire1.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Utilitaire2.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Utilitaire3.png" alt="image 1">
+                            <img class="slide" src="screenshot-projets/JAVA - Depeche/Utilitaire4.png" alt="image 1">
+                </div>
+                <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+                <button class="next" onclick="nextSlide(this)">&#10095;</button>
+            </div>
+            
+            <div class="modal-description">
+                <strong>Description :</strong> Projet académique réalisé en binôme sur deux semaines, programme destiné à analyser et classer des dépêches dans des catégories spécifiques (environnement, culture, économie, politique, sport). Le processus repose sur un ensemble d'étapes qui visent à lire les données, calculer des scores de classification c'est à dire donner des "poids" au mot par rapport à leur pertinence dans une catégorie, puis enfin générer un lexique spécifique à chaque catégorie.
+                <br><br>
+                <strong>Technologies :</strong> En Java codé sur IntelliJ IDEA, GitHub.
+                <br><br>
+                <strong>Rôles :</strong> Je me suis chargé de la classification automatique et de l'optimisation de ces méthodes et de la rédaction du rendu en anglais.
+            </div>
+            
+            <div class="modal-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">IntelliJ IDEA</span>
+                <span class="tech-tag">GitHub</span>
+            </div>
+        </div>
+    </div>
+
+
+
+<!-- Modal Spotzer -->
+    <div id="modal-api-genius" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('modal-api-genius')">&times;</button>
+            <div class="modal-header">
+                <h2 class="modal-title">Spotzer</h2>
+                <div class="modal-date">Projet scolaire</div>
+            </div>
+            
+            <div class="slider">
+            <div class="slides">
+                <img class="slide" src="screenshot-projets/API Genius/rendu visuel 1.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/API Genius/rendu visuel 2.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/API Genius/rendu visuel 3.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/API Genius/rendu visuel 4.png" alt="Accueil Titanic"> 
+                <img class="slide" src="screenshot-projets/API Genius/html principal.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/API Genius/Exemple js 1.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/API Genius/Exemple js 2.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/API Genius/Exemple js 3.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/API Genius/Exemple js 4.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/API Genius/Exemple js 5.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/API Genius/Exemple js 6.png" alt="Accueil Titanic">
+                <img class="slide" src="screenshot-projets/API Genius/Exemple js 7.png" alt="Accueil Titanic">      
+            </div>
+            <button class="prev" onclick="prevSlide(this)">&#10094;</button>
+            <button class="next" onclick="nextSlide(this)">&#10095;</button>
+        </div>
+
+
+
+            <div class="modal-description">
+                <strong>Description :</strong> Application complète dédiée à l'implémentation d'une API publique et d'un cahier des charges. Cette API devait permettre de lancer une recherche, mettre un element en favori
+<br>
+      
+Le projet doit également utiliser uniquement du HTML, CSS et JavaScript natif, sans aucun framework ou langage côté serveur comme PHP. La base de code fournie (structure HTML, styles CSS, icônes) doit être adaptée pour répondre à la problématique choisie.
+
+Une API publique en HTTPS doit être intégrée. L’appel à l’API se fait en JavaScript, via AJAX (avec fetch ou XMLHttpRequest). La gestion des favoris devait avoir les fonctionnalités suivantes : permettre de supprimer un favori, sauvegarder les favoris dans le LocalStorage, afficher les favoris enregistrés. Enfin des améliorations & personnalisations aux choix. j'ai eu les idées de faire un historique de recherche, de l'autocompletion, et un jeu pour deviner les 3 musiques les plus populaires pour un artiste donné sur genius.
+                
+                <strong>Rôles :</strong> j'ai fais l'interface et la recherche des musiques. J'ai aussi développé les améliorations évoqués juste avant.
+                <br><br>
+              
+            </div>
+            
+            <div class="modal-tech">
+                    <span class="tech-tag">Javascript</span>
+                    <span class="tech-tag">Visual Studio Code</span>
+                    <span class="tech-tag">API Rest</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Gitlab</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact Section -->
+  
+
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-text">matteo.banroques--mathian@etu.univ-grenoble-alpes.fr</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-text">+33 7 71 68 55 30</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💼</div>
+                    <div class="contact-text">
+                        <a href="https://www.linkedin.com/in/matteo-banroques-mathian-0a7ba1329" target="_blank" style="color: #2c5aa0; text-decoration: none;">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🐙</div>
+                    <div class="contact-text">
+                        <a href="https://github.com/MatteBas" target="_blank" style="color: #2c5aa0; text-decoration: none;">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+                  
+    <script src="script.js"></script>
+ 
+</body>
+</html>
