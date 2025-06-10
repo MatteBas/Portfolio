@@ -267,11 +267,10 @@ function goToProjectsPage(skillType) {
 const skillToTagMapping = {
     'Java & JavaFX': ['java', 'javafx'],
     'HTML/CSS': ['html', 'css'],
-    'JavaScript/TypeScript': ['javascript'],
-    'PHP & Symfony': ['php'],
-    'Bases de données': ['sql', 'mysql', 'postgresql'],
+    'JavaScript/TypeScript': ['javascript', 'typescript'],
+    'PHP': ['php'],
+    'SQL': ['sql', 'mysql', 'postgresql'],
     'C/C++': ['c', 'cpp'],
-    'DevOps & Outils': ['docker', 'git'] 
 };
 
 // Fonction pour normaliser les noms de compétences/tags
